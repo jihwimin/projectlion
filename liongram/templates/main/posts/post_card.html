@@ -1,0 +1,56 @@
+{% load static%}
+<main>
+    <div class = "card-list">
+        <div class = "card">
+            <div class = "card_header">
+                <img src = "http://via.placeholder.com/32x32" alt = "프로필이미지">
+                <a href = "#">
+                    <span class = "card_user-name"> likelion.official</span>
+                </a>
+            </div>
+            <div class = "card_body">
+                <div>
+                    <img class = "card__image" src = "http://via.placeholder.com/600x600" alt = "이미지">
+                </div>
+                <div class = "car__btn-group">
+                    <img src = "{% static 'icons/filename%}" alt = "">
+                </div>
+                <div>
+                    북마크
+                </div>
+            </div>
+            <div class = "card_content">
+                <span class = "card__like-num">좋아요 00개</span>
+                <div class = "card__main-text">
+                    <p><span class = "card__user-name">likelion.official</span>{{"실무와 현업에서 필요로 하는 백엔드 개발자로의 역량 배양에 효과적"}}</p>
+                </div>
+                <div>
+                    <p>댓글 0개 모두 보기</p>
+                    <ul class = "card_comment-group">
+                        <li>
+                            <p><span class = "card__user-name">likelion.official</span>댓글 내용...</p>
+                        </li>
+                    </ul>
+                    <p class = "card__created-at">2025년 2월 4일</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div>
+        <nav>
+            <ul class='bottom-menu-group'>    
+                <li>
+                    <img src = "{% static 'icons/home_outlined_black_36dp.svg'%}" alt = "홈">
+                    홈</li>
+                <li>검색</li>
+                <li>글쓰기</li>
+                <li>좋아요</li>
+                <li>프로필</li>
+
+            </ul>
+        </nav>
+
+    </div>
+</main>
+{% endblock %}
